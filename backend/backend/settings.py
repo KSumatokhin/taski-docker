@@ -1,5 +1,5 @@
-from pathlib import Path
 import os
+from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -8,7 +8,8 @@ SECRET_KEY = 'django-insecure-j_89af+30&&4qm*8z9_(^zz8p4-ho8z_m6ylm0s$h!-p@on1_^
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['51.250.29.172', '127.0.0.1', 'localhost', 'kstaski.zapto.org']
+ALLOWED_HOSTS = ['51.250.29.172', '127.0.0.1',
+                 'localhost', 'kstaski.zapto.org']
 
 
 # Application definition
@@ -117,7 +118,7 @@ STATIC_URL = '/static/'
 # в контейнере это будет /app/collected_static
 STATIC_ROOT = BASE_DIR / 'collected_static'
 # Теперь при вызове команды python manage.py collectstatic
-# Django будет копировать все статические файлы в директорию collected_static 
+# Django будет копировать все статические файлы в директорию collected_static
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
